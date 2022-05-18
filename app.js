@@ -43,7 +43,6 @@ document.querySelector('.buttons').onclick = (event) => {
             b += key;
             display.textContent = b;
         }
-        console.log(a, b, sign);
         return;
     }
 
@@ -51,7 +50,7 @@ document.querySelector('.buttons').onclick = (event) => {
     if (action.includes(key)) {
         sign = key;
         display.textContent = sign;
-        console.log(a, b, sign);
+        
     }
 
     //Action =
@@ -69,7 +68,7 @@ document.querySelector('.buttons').onclick = (event) => {
                 break;
             case '/':
                 if (b === '0') {
-                    display.textContent = 'You can`t do this!';
+                    display.textContent = '^_^ Error';
                     a = '';
                     b = '';
                     sign = '';
@@ -80,7 +79,7 @@ document.querySelector('.buttons').onclick = (event) => {
         }
         finish = true;
         display.textContent = a;
-        console.log(a, b, sign);
+        
     }
 }
 
